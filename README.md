@@ -61,7 +61,7 @@ This project is an end-to-end data analysis solution designed to extract critica
      - Analyzing peak sales periods and customer buying patterns.
      - Profit margin analysis by branch and category.
    - **Documentation**: Keep clear notes of each query's objective, approach, and results.
-'''sql
+```sql
 --rdr ==last_rev-cr_rev/ls_rev*100
 SELECT *,
 EXTRACT(YEAR FROM TO_DATE(date,'DD/MM/YY')) as formated_date		
@@ -106,7 +106,7 @@ WHERE
 	ls.revenue > cs.revenue
 ORDER BY 4 DESC
 LIMIT 5
-'''
+```
 ### 10. Project Publishing and Documentation
    - **Documentation**: Maintain well-structured documentation of the entire process in Markdown or a Jupyter Notebook.
    - **Project Publishing**: Publish the completed project on GitHub or any other version control platform, including:
